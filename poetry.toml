@@ -1,0 +1,3 @@
+[virtualenvs]
+# Needed for pyright to find the virtual environment
+in-project = true
