@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "GraphQL Debug Server",
+            "type": "python",
+            "request": "launch",
+            "module": "strawberry",
+            "args": [
+                "server",
+                "pubtransdb.graphql.schema:schema",
+                "--host",
+                "localhost",
+            ],
+            "justMyCode": true
+        }
+    ]
+}

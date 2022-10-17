@@ -1,0 +1,7 @@
+type Query {
+  serverInfo: ServerInfo!
+}
+
+type ServerInfo {
+  version: String!
+}

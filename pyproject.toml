@@ -13,6 +13,7 @@ python = "^3.10"
 SQLAlchemy = {version = "^2.0.0b1"}
 psycopg2 = "^2.9.4"
 pydantic = {extras = ["dotenv"], version = "^1.10.2"}
+strawberry-graphql = "^0.137.0"
 
 [tool.poetry.group.dev.dependencies]
 bandit = {extras = ["toml"], version = "^1.7.4"}
@@ -24,6 +25,7 @@ black = "^22.10.0"
 isort = "^5.10.1"
 flake8-import-order = "^0.18.1"
 alembic = {extras = ["tz"], version = "^1.8.1"}
+strawberry-graphql = {extras = ["debug-server"], version = "^0.137.0"}
 
 [tool.isort]
 profile = "black"
