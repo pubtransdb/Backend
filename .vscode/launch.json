@@ -2,15 +2,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "GraphQL Debug Server",
+            "name": "FastAPI app",
             "type": "python",
             "request": "launch",
-            "module": "strawberry",
+            "module": "uvicorn",
             "args": [
-                "server",
-                "pubtransdb.graphql.schema:schema",
+                "pubtransdb.fastapi.app:app",
                 "--host",
                 "localhost",
+                "--port",
+                "8000"
             ],
             "justMyCode": true
         }

@@ -10,10 +10,11 @@ classifiers = ["Private :: Do Not Upload"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-SQLAlchemy = {version = "^2.0.0b1"}
-psycopg2 = "^2.9.4"
+SQLAlchemy = {extras = ["postgresql"], version = "^2.0.0b1"}
 pydantic = {extras = ["dotenv"], version = "^1.10.2"}
-strawberry-graphql = "^0.137.0"
+strawberry-graphql = {extras = ["fastapi"], version = "^0.137.0"}
+fastapi = "^0.85.1"
+uvicorn = "^0.19.0"
 
 [tool.poetry.group.dev.dependencies]
 bandit = {extras = ["toml"], version = "^1.7.4"}
